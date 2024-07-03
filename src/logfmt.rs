@@ -241,6 +241,7 @@ bitflags! {
     /// `LogfmtAutoFields` is used to determine what fields of a log::Record should be rendered into
     /// the final logfmt string by the `LogfmtFormatter`. The default set is LEVEL | MESSAGE | MODULE_PATH
     /// | EXTRA
+    #[derive(Debug)]
     pub struct LogfmtAutoFields: u32 {
         /// Include a `level` field indicating the level the message was logged at.
         const LEVEL = 1;
